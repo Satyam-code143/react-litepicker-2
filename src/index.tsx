@@ -84,7 +84,7 @@ export interface LitePickerPropsWithoutRanges {
 export type LitePickerProps = LitePickerBaseProps &
   (LitePickerPropsWithRanges | LitePickerPropsWithoutRanges)
 
-const LP = React.forwardRef<typeof Litepicker, LitePickerProps>(
+const LitePicker = React.forwardRef<typeof Litepicker, LitePickerProps>(
   (options: LitePickerProps, ref) => {
     const {
       string: applyString,
@@ -189,4 +189,4 @@ function useStringAndPortal(
   }, [id, node])
 }
 
-export default LP
+export default LitePicker
